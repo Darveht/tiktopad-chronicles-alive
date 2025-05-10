@@ -1,13 +1,27 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import Layout from '../components/Layout';
+import StoryFeed from '../components/StoryFeed';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <Layout>
+      <header className="tiktales-gradient py-6 px-4">
+        <div className="max-w-screen-lg mx-auto">
+          <div className="flex justify-between items-center mb-8">
+            <h1 className="text-2xl font-bold text-white">TikTales</h1>
+            <div className="text-white text-sm">
+              <span className="font-medium">Historias en Tendencia</span>
+            </div>
+          </div>
+          <p className="text-white text-lg max-w-xl">
+            Explora historias inmersivas en un formato diseñado para la era digital.
+          </p>
+        </div>
+      </header>
+      
+      <StoryFeed />
+    </Layout>
   );
 };
 
