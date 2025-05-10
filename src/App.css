@@ -1,42 +1,56 @@
+
+/* Remove default styles to better match TikTok's clean look */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* TikTok-inspired animation for story cards */
+@keyframes tiktok-pulse {
+  0% {
+    transform: scale(1);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.tiktok-pulse {
+  animation: tiktok-pulse 2s infinite;
 }
 
-.card {
-  padding: 2em;
+/* TikTok-like vertical scrolling snap */
+.snap-y-mandatory {
+  scroll-snap-type: y mandatory;
 }
 
-.read-the-docs {
-  color: #888;
+.snap-center {
+  scroll-snap-align: center;
+}
+
+/* TikTok-inspired card transitions */
+.tiktok-card-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.tiktok-card-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.tiktok-card-exit {
+  opacity: 1;
+}
+
+.tiktok-card-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms, transform 300ms;
 }

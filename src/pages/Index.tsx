@@ -6,21 +6,20 @@ import StoryFeed from '../components/StoryFeed';
 const Index = () => {
   return (
     <Layout>
-      <header className="tiktales-gradient py-6 px-4">
-        <div className="max-w-screen-lg mx-auto">
-          <div className="flex justify-between items-center mb-8">
-            <h1 className="text-2xl font-bold text-white">TikTales</h1>
-            <div className="text-white text-sm">
-              <span className="font-medium">Historias en Tendencia</span>
+      <div className="bg-tiktales-dark">
+        <div className="tiktales-gradient py-4 px-3">
+          <div className="max-w-screen-lg mx-auto">
+            <div className="flex justify-between items-center">
+              <h1 className="text-2xl font-bold text-white">TikTales</h1>
+              <div className="text-white text-sm">
+                <span className="font-medium">Historias</span>
+              </div>
             </div>
           </div>
-          <p className="text-white text-lg max-w-xl">
-            Explora historias inmersivas en un formato diseñado para la era digital.
-          </p>
         </div>
-      </header>
-      
-      <StoryFeed />
+        
+        <StoryFeed />
+      </div>
     </Layout>
   );
 };
