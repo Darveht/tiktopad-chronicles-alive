@@ -7,33 +7,33 @@
 
 @layer base {
   :root {
-    --background: 0 0% 7%;
-    --foreground: 0 0% 100%;
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
 
-    --card: 0 0% 12%;
-    --card-foreground: 0 0% 100%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
 
-    --popover: 0 0% 12%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 255 59% 74%;
+    --primary: 209 100% 33%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 261 69% 87%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 210 38% 95%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 0 0% 20%;
-    --muted-foreground: 0 0% 70%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 340 98% 58%;
+    --accent: 209 100% 33%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 261 69% 87%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 209 100% 33%;
 
     --radius: 0.75rem;
 
@@ -97,4 +97,28 @@
 
 .tiktales-btn-secondary {
   @apply bg-tiktales-purple text-white hover:bg-tiktales-dark-purple;
+}
+
+
+.paypal-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.paypal-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #003087;
+}
+
+.paypal-text {
+  color: #2c2e2f;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.paypal-card {
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
